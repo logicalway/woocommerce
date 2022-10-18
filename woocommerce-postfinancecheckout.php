@@ -502,7 +502,7 @@ if ( ! class_exists( 'WooCommerce_PostFinanceCheckout' ) ) {
 			if ( isset( $_COOKIE['wc_postfinancecheckout_device_id'] ) && ! empty( $_COOKIE['wc_postfinancecheckout_device_id'] ) ) {
 				$value = sanitize_text_field( wp_unslash( $_COOKIE['wc_postfinancecheckout_device_id'] ) );
 			}
-			setcookie( 'wc_postfinancecheckout_device_id', $value, time() + YEAR_IN_SECONDS, '/' );
+			@setcookie( 'wc_postfinancecheckout_device_id', $value, time() + YEAR_IN_SECONDS, '/' );
 		}
 
 		/**
