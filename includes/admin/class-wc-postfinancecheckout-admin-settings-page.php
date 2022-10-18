@@ -315,8 +315,8 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 				'css'      => 'min-width:300px;',
 				'default'  => WC_PostFinanceCheckout_Integration::IFRAME,
 				'options'  => array(
-					WC_Wallee_Integration::IFRAME => $this->format_display_string( __( 'iframe', 'woo-wallee' ) ),
-					WC_Wallee_Integration::LIGHTBOX  => $this->format_display_string( __( 'lightbox', 'woo-wallee' ) ),
+                    WC_PostFinanceCheckout_Integration::IFRAME => $this->format_display_string( __( 'iframe', 'woo-wallee' ) ),
+                    WC_PostFinanceCheckout_Integration::LIGHTBOX  => $this->format_display_string( __( 'lightbox', 'woo-wallee' ) ),
 				),
 			),
 
@@ -359,8 +359,8 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 				'css'      => 'min-width:300px;',
 				'default'  => WC_PostFinanceCheckout_Order_Reference::ORDER_ID,
 				'options'  => array(
-					WC_Wallee_Order_Reference::ORDER_ID => $this->format_display_string( __( 'order_id', 'woo-wallee' ) ),
-					WC_Wallee_Order_Reference::ORDER_NUMBER  => $this->format_display_string( __( 'order_number', 'woo-wallee' ) ),
+                    WC_PostFinanceCheckout_Order_Reference::ORDER_ID => $this->format_display_string( __( 'order_id', 'woo-wallee' ) ),
+                    WC_PostFinanceCheckout_Order_Reference::ORDER_NUMBER  => $this->format_display_string( __( 'order_number', 'woo-wallee' ) ),
 				),
 			),
 
