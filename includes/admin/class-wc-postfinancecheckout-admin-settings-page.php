@@ -173,7 +173,7 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 	 */
 	public function output_links( $value ) {
 		foreach ( $value['links'] as $url => $text ) {
-			echo '<a href="' . esc_url( $url ) . '" class="page-title-action" target="_blank">' . esc_html( $text ) . '</a>';
+			echo '<a href="' . esc_url( $url ) . '" class="page-title-action">' . esc_html( $text ) . '</a>';
 		}
 	}
 
@@ -187,7 +187,7 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 		$settings = array(
 			array(
 				'links' => array(
-					'https://plugin-documentation.postfinance-checkout.ch/pfpayments/woocommerce/2.0.4/docs/en/documentation.html' => __( 'Documentation', 'woo-postfinancecheckout' ),
+					'https://plugin-documentation.postfinance-checkout.ch/pfpayments/woocommerce/2.0.8/docs/en/documentation.html' => __( 'Documentation', 'woo-postfinancecheckout' ),
 					'https://checkout.postfinance.ch/en-ch/user/signup' => __( 'Sign Up', 'woo-postfinancecheckout' ),
 				),
 				'type'  => 'postfinancecheckout_links',
@@ -315,8 +315,8 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 				'css'      => 'min-width:300px;',
 				'default'  => WC_PostFinanceCheckout_Integration::IFRAME,
 				'options'  => array(
-                    WC_PostFinanceCheckout_Integration::IFRAME => $this->format_display_string( __( 'iframe', 'woo-wallee' ) ),
-                    WC_PostFinanceCheckout_Integration::LIGHTBOX  => $this->format_display_string( __( 'lightbox', 'woo-wallee' ) ),
+				    WC_PostFinanceCheckout_Integration::IFRAME => $this->format_display_string( __( 'iframe', 'woo-postfinancecheckout' ) ),
+				    WC_PostFinanceCheckout_Integration::LIGHTBOX  => $this->format_display_string( __( 'lightbox', 'woo-postfinancecheckout' ) ),
 				),
 			),
 
@@ -359,8 +359,8 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 				'css'      => 'min-width:300px;',
 				'default'  => WC_PostFinanceCheckout_Order_Reference::ORDER_ID,
 				'options'  => array(
-                    WC_PostFinanceCheckout_Order_Reference::ORDER_ID => $this->format_display_string( __( 'order_id', 'woo-wallee' ) ),
-                    WC_PostFinanceCheckout_Order_Reference::ORDER_NUMBER  => $this->format_display_string( __( 'order_number', 'woo-wallee' ) ),
+				    WC_PostFinanceCheckout_Order_Reference::ORDER_ID => $this->format_display_string( __( 'order_id', 'woo-postfinancecheckout' ) ),
+				    WC_PostFinanceCheckout_Order_Reference::ORDER_NUMBER  => $this->format_display_string( __( 'order_number', 'woo-postfinancecheckout' ) ),
 				),
 			),
 

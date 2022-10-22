@@ -433,3 +433,11 @@ Travis build fix for deployment
 
 Travis build fix for deployment
 
+changes to build pipeline
+
+Minor bugfix for dependencies
+
+sanitation bugfix
+
+travis timeout fix
+
