@@ -173,7 +173,7 @@ class WC_PostFinanceCheckout_Admin_Settings_Page extends WC_Settings_Page {
 	 */
 	public function output_links( $value ) {
 		foreach ( $value['links'] as $url => $text ) {
-			echo '<a href="' . esc_url( $url ) . '" class="page-title-action">' . esc_html( $text ) . '</a>';
+			echo '<a href="' . esc_url( $url ) . '" class="page-title-action" target="_blank">' . esc_html( $text ) . '</a>';
 		}
 	}
 
